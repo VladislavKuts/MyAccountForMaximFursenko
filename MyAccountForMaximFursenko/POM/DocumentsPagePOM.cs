@@ -96,7 +96,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method open Personal cabinet of My Account
+        /// This method open Personal cabinet page of My Account
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickPersonalCabinet()
@@ -126,7 +126,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method open Personal data of My Account
+        /// This method open Personal data page of My Account
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickTopBlockPersonalDatasPage()
@@ -196,7 +196,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method open Personal page of My Account
+        /// This method open Security page of My Account
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickSecurityPage()
@@ -210,7 +210,7 @@ namespace MyAccountForMaximFursenko.POM
 
 
         /// <summary>
-        /// This method open block uload photo of My Account
+        /// This method Open block download photo of My Account
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickDownloadPasport()
@@ -220,17 +220,17 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method upload Pasport photo of My Account
+        /// This method uploads a pasport photo
         /// </summary>
         /// <returns></returns>
-        public DocumentsPagePOM SendKeyDownloadPasportPhoto()
+        public DocumentsPagePOM SendKeysDownloadPasportPhoto()
         {
             FindElement(DownloadPasportPhoto).SendKeys("Ukazat put");
             return this;
         }
 
         /// <summary>
-        /// This method open notification with validation data of My Account
+        /// This method displays validation for uploading pasport photo.
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickWhatShouldBeAPasport()
@@ -240,7 +240,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method take expected result
+        /// This method saves the name of the uploaded photo
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM TextNameOfTheUploadedPasportPhoto()
@@ -250,7 +250,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method closed Upload pasport Photo page of My Account
+        /// This method closed upload pasport зhoto page of My Account
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickCancelUploadPasportPhoto()
@@ -260,7 +260,7 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method open Personal page of My Account
+        /// This method uploads second pasport photo
         /// </summary>
         /// <returns></returns>
         public DocumentsPagePOM ClickChangePassportPhoto()
@@ -268,182 +268,5 @@ namespace MyAccountForMaximFursenko.POM
             FindElement(ChangePassportPhoto).SendKeys("Ukazat put");
             return this;
         }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-
-
-
-
-
-
-
     }
 }
