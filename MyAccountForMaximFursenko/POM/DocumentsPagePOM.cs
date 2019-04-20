@@ -31,7 +31,7 @@ namespace MyAccountForMaximFursenko.POM
         internal static By DownloadPasport = By.CssSelector("div:nth-child(1) > div > div:nth-child(3) > button");
         internal static By DownloadPasportPhoto = By.CssSelector("div:nth-child(1) > div > div input");
         internal static By WhatShouldBeAPasport = By.CssSelector("div.b-document-item:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)");
-        internal static By NameOfTheUloadedPasportPhoto = By.CssSelector("div.b-document-item:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
+        internal static By NameOfTheUploadedPasportPhoto = By.CssSelector("div.b-document-item:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
         internal static By CancelUploadPasportPhoto = By.CssSelector("div.b-document-item:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)");
         internal static By ChangePassportPhoto = By.CssSelector("div.b-document-item:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)");
 
@@ -41,7 +41,7 @@ namespace MyAccountForMaximFursenko.POM
         internal static By DownloadAdressDocument = By.CssSelector("div:nth-child(2) > div > div:nth-child(3) > button");
         internal static By DownloadAdressDocumnetPhoto = By.CssSelector("div:nth-child(2) > div > div input");
         internal static By WhatShouldBeAAdressDocument = By.CssSelector("div.b-document-item:nth-child(2) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)");
-        internal static By NameOfTheUloadedAdressDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
+        internal static By NameOfTheUploadedAdressDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
         internal static By CancelUploadAdressDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)");
         internal static By ChangeAdressDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(2) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)");
 
@@ -51,7 +51,7 @@ namespace MyAccountForMaximFursenko.POM
         internal static By DownloadAdditionalDocument = By.CssSelector("div:nth-child(3) > div > div:nth-child(3) > button");
         internal static By DownloadAdditionalDocumnetPhoto = By.CssSelector("div:nth-child(3) > div > div input");
         internal static By WhatShouldBeAAdditionalDocument = By.CssSelector("div.b-document-item:nth-child(3) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)");
-        internal static By NameOfTheUloadedAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
+        internal static By NameOfTheUploadedAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
         internal static By CancelUploadAdditionalDocument= By.CssSelector("div.b-document-item:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)");
         internal static By ChangeAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(3) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)");
 
@@ -61,7 +61,7 @@ namespace MyAccountForMaximFursenko.POM
         internal static By DownloadSecondAdditional = By.CssSelector("div:nth-child(4) > div > div:nth-child(3) > button");
         internal static By DownloadSecondAdditionalPhoto = By.CssSelector("div:nth-child(4) > div > div input");
         internal static By WhatShouldBeASecondAdditionalDocument = By.CssSelector("div.b-document-item:nth-child(4) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)");
-        internal static By NameOfTheUloadedSecondAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
+        internal static By NameOfTheUploadedSecondAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
         internal static By CancelUploadSecondAdditionalDocument = By.CssSelector("div.b-document-item:nth-child(4) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)");
         internal static By ChangeSecondAdditionalDocumentPhoto = By.CssSelector("div.b-document-item:nth-child(4) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)");
 
@@ -240,12 +240,22 @@ namespace MyAccountForMaximFursenko.POM
         }
 
         /// <summary>
-        /// This method open Personal page of My Account
+        /// This method take expected result
         /// </summary>
         /// <returns></returns>
-        public DocumentsPagePOM TextNameOfTheUloadedPasportPhoto()
+        public DocumentsPagePOM TextNameOfTheUploadedPasportPhoto()
         {
-            FindElement(NameOfTheUloadedPasportPhoto).Text("Imya ukazannogo puti");
+            string Expected = FindElement(NameOfTheUploadedPasportPhoto).Text.ToString();
+            return this;
+        }
+
+        /// <summary>
+        /// This method closed Upload pasport Photo page of My Account
+        /// </summary>
+        /// <returns></returns>
+        public DocumentsPagePOM ClickCancelUploadPasportPhoto()
+        {
+            FindElement(CancelUploadPasportPhoto).Click();
             return this;
         }
 
@@ -253,19 +263,9 @@ namespace MyAccountForMaximFursenko.POM
         /// This method open Personal page of My Account
         /// </summary>
         /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
+        public DocumentsPagePOM ClickChangePassportPhoto()
         {
-            FindElement(PersonalPage).Click();
-            return this;
-        }
-
-        /// <summary>
-        /// This method open Personal page of My Account
-        /// </summary>
-        /// <returns></returns>
-        public DocumentsPagePOM ClickPersonalPage()
-        {
-            FindElement(PersonalPage).Click();
+            FindElement(ChangePassportPhoto).SendKeys("Ukazat put");
             return this;
         }
 
